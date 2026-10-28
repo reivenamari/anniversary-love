@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love 💜</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio
+    id="backgroundMusic"
+    src="./lifetime.mp3"
+    loop
+    preload="auto">
+  </audio>
+
+  <button
+    id="musicButton"
+    class="music-button"
+    type="button"
+    onclick="toggleMusic()">
+    ♫ Tap to Play
+  </button>
+
+  <!-- PAGE 1: OPENING -->
+  <section id="opening" class="page active">
+    <div class="opening-content">
+      <p class="small-text">A LITTLE SOMETHING FOR YOU</p>
+
+      <div class="envelope" onclick="openLetter()">
+        <div class="envelope-back"></div>
+
+        <div class="envelope-paper">
+          <span>For my love 💌</span>
+        </div>
+
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-heart">♥</div>
+      </div>
+
+      <h1>To My Favorite Person</h1>
+      <p class="subtitle">I made something special just for you.</p>
+
+      <button class="main-button" onclick="openLetter()">
+        Open My Letter 💌
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 2: LOVE LETTER -->
+  <section id="letter" class="page">
+    <div class="letter-card">
+      <p class="small-text">A LETTER FROM MY HEART</p>
+      <h1>My Dearest Love, 💜</h1>
+
+      <div class="letter-text">
+        <p>Happy anniversary, my love!</p>
+
+        <p>
+          Thank you for being part of my life and for giving me
+          so many reasons to smile. Every moment with you is
+          something I will always treasure.
+        </p>
+
+        <p>
+          You make ordinary days feel special. Even when things
+          are not perfect, I am grateful that I get to share
+          this journey with you.
+        </p>
+
+        <p>
+          I hope we continue to grow together, support each other,
+          and create more beautiful memories. No matter where
+          life takes us, I hope we always choose each other.
+        </p>
+
+        <p>
+          I love you more than these words can explain. Here's
+          to more anniversaries, more laughter, and more years
+          of loving you. 💗
+        </p>
+
+        <p class="signature">
+          Forever yours,<br>
+          Your favorite person ♡
+        </p>
+      </div>
+
+      <button class="main-button" onclick="showPage('gifts')">
+        Continue to Your Gifts 🎁
+      </button>
+
+      <button class="back-button" onclick="showPage('opening')">
+        ← Back
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 3: GIFT MENU -->
+  <section id="gifts" class="page">
+    <div class="gift-content">
+      <p class="small-text">MADE WITH LOVE</p>
+      <h1>Gifts for You 🎁</h1>
+      <p class="subtitle">Choose a little gift, my love.</p>
+
+      <div class="gift-grid">
+        <button class="gift-card" onclick="showPage('littleLetter')">
+          <span class="gift-icon">💌</span>
+          <span class="gift-title">A Little Letter</span>
+          <span class="gift-description">A special message for you</span>
+        </button>
+
+        <button class="gift-card" onclick="showPage('memories')">
+          <span class="gift-icon">📸</span>
+          <span class="gift-title">Our Memories</span>
+          <span class="gift-description">Our favorite moments together</span>
+        </button>
+
+        <button class="gift-card" onclick="showPage('flowers')">
+          <span class="gift-icon">💐</span>
+          <span class="gift-title">Flowers for You</span>
+          <span class="gift-description">A bouquet full of love</span>
+        </button>
+      </div>
+
+      <button class="back-button" onclick="showPage('letter')">
+        ← Back to My Letter
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 4: A LITTLE LETTER -->
+  <section id="littleLetter" class="page">
+    <div class="content-card">
+      <div class="big-icon">💌</div>
+      <p class="small-text">JUST BETWEEN US</p>
+      <h1>A Little Reminder</h1>
+
+      <div class="message-box">
+        <p>
+          If you ever have a day when you feel tired, remember
+          that you don't have to face everything alone.
+        </p>
+
+        <p>
+          I may not always know the perfect words to say, but
+          I will always want to understand you, listen to you,
+          and remind you how special you are to me.
+        </p>
+
+        <p>
+          You are loved on your happiest days and on the days
+          when everything feels difficult. You are important
+          to me, and I am thankful for you every single day.
+        </p>
+
+        <p class="highlight-text">
+          You will always have a special place in my heart. ♡
+        </p>
+      </div>
+
+      <button class="back-button" onclick="showPage('gifts')">
+        ← Back to Gifts
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 5: OUR MEMORIES -->
+  <section id="memories" class="page">
+    <div class="memories-content">
+      <p class="small-text">LITTLE MOMENTS, BIG LOVE</p>
+      <h1>Our Memories 📸</h1>
+      <p class="subtitle">Eight little pieces of our story.</p>
+
+      <div class="photo-grid">
+        <div class="photo-card">
+          <img src="./images/photo1.jpg" alt="Our memory 1">
+          <p>Memory No. 1 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo2.jpg" alt="Our memory 2">
+          <p>Memory No. 2 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo3.jpg" alt="Our memory 3">
+          <p>Memory No. 3 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo4.jpg" alt="Our memory 4">
+          <p>Memory No. 4 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo5.jpg" alt="Our memory 5">
+          <p>Memory No. 5 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo6.jpg" alt="Our memory 6">
+          <p>Memory No. 6 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo7.jpg" alt="Our memory 7">
+          <p>Memory No. 7 ♡</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="./images/photo8.jpg" alt="Our memory 8">
+          <p>Memory No. 8 ♡</p>
+        </div>
+      </div>
+
+      <p class="memory-ending">
+        My favorite memories are the ones with you. 💜
+      </p>
+
+      <button class="back-button" onclick="showPage('gifts')">
+        ← Back to Gifts
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 6: FLOWERS -->
+  <section id="flowers" class="page">
+    <div class="content-card flowers-card">
+      <div class="flower-bouquet">💐</div>
+
+      <p class="small-text">A BOUQUET FOR MY LOVE</p>
+      <h1>Flowers for You 🌷</h1>
+
+      <div class="flower-decoration">🌸 🌷 🌹 🌼 🌷 🌸</div>
+
+      <div class="message-box">
+        <p>
+          If I could give you every flower in the world, I would.
+          But even the most beautiful flowers could never
+          explain how much you mean to me.
+        </p>
+
+        <p>
+          Like flowers, I hope our love continues to grow,
+          bloom, and become more beautiful with time.
+        </p>
+
+        <p class="highlight-text">
+          You deserve all the love and beautiful things in life.
+          I love you, always. 💗
+        </p>
+      </div>
+
+      <div class="flower-decoration">🌹 🌼 🌸 🌷 🌸 🌹</div>
+
+      <button class="back-button" onclick="showPage('gifts')">
+        ← Back to Gifts
+      </button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Made with love, just for you 💜
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
